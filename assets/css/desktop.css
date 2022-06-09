@@ -1,0 +1,51 @@
+@charset "utf-8";
+@media (min-width:1112px) {
+ .nav_titulo {
+     position: absolute;
+     left: 7%; 
+ }
+ .label {
+    display: none;
+ }
+ .div_ul {
+  position: relative;
+  margin-top: 0px;
+  position: relative;
+  background-color: #C4C4C4;
+  display: flex;
+  flex-direction: inherit;
+  padding: 0px;
+  
+  width: 50%;
+  position: relative;
+  justify-content: center;
+ }
+  
+
+ .li_1 {
+   margin-right: 2px;
+   margin-top: 10px;
+ }
+ .li_2 {
+   margin-right: 2px;
+   margin-top: 10px;
+ }
+ .a_1 {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+ }
+ .a_2 {
+    background-color: white; 
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+ }
+ a:hover {
+     background-color: white;
+     color: blue;
+ }
+}

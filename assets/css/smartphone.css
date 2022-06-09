@@ -1,0 +1,239 @@
+@charset "utf-8";
+/*zerando margens do body*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: lato,sans-serif;
+  
+}
+/*Header smartphone*/
+header {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+nav {
+  background-color: #C4C4C4;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+#logo {
+  width: 30px;
+  height: 27.63px;
+  margin-top: 12px;
+  margin-left: 22px;
+}
+.comt-finan {
+  margin: auto;
+}
+/*Menu*/
+#check {
+ display: none;
+}
+.label {
+  position: relative;
+  width: 60px;
+}
+.div_ul {
+  width: 200px;
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  padding: 40px 20px;
+  transition: 0.5s;
+}
+.menu {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  z-index: 1;
+}
+.fechar {
+  width: 20px;
+  height: 30px;
+  display: flex;
+  z-index: 2;
+}
+span {
+  width: 23px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.597);
+  margin-top: 4px;
+  display: block;
+}
+.fechar > span {
+  background-color: white;
+  width: 23px;
+  height: 3px;
+  margin-top: 4px;
+  display: block;
+}
+
+input[type="checkbox"]:checked ~ .div_ul {
+  transform: translateX(-240px);
+}
+a {
+  display: block;
+  display: block;
+  font-size: 16px;
+  line-height: 19.2px;
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  background-color: #C4C4C4;
+  color: black;
+}
+li {
+
+  color: white;
+  display: block;
+} 
+/*section*/
+main {
+  padding: 0px 20px;
+}
+.container_a {
+  display: flex;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+.sub_conteiner {
+  margin-bottom: 28.56px;
+  border-bottom: 1px solid #dadadacf;
+  padding-bottom: 10px;
+  margin-top: 29px;
+}
+#nova_transaçao {
+  display: none;
+}
+input,label,select {
+  font-size: 14px;
+  line-height: 22px;
+}
+input,select {
+  border: 1px solid #dadadacf;
+  height: 32px;
+  padding-left: 12px;
+}
+#input_nome,#input_valor {
+  height: 32px;
+  padding-left: 12px;
+}
+.div_bloco_a {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.div_bloco_b {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.div_bloco_c {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.div_bloco_d {
+  display: flex;
+  height: 32px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+#nova_transacao {
+  display: none;
+}
+/*tabela*/
+table {
+  border-collapse: collapse;
+  width: 98%;
+  margin: auto;
+  padding: 20px;
+}
+/*titulo da tabela*/
+caption {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 21px;
+}
+.div_bloco_d > button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+}
+th {
+  border-bottom: 1px solid #DADADA;
+}
+tr {
+  height: 60px;
+}
+.mercadoria {
+  text-align: left;
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 25px;
+}
+.valor {
+  text-align: right;
+  font-size: 14px;
+  line-height: 22px;
+}
+.mais,.menos {
+  border-bottom: 1px solid #DADADA; 
+  width: 9px;
+  text-align: center;
+  padding-right: 20px;
+}
+.descricao {
+  border-bottom: 1px solid #DADADA;
+}
+.soma {
+  text-align: right;
+  font-size: 14px;
+  line-height: 22px;
+  border-bottom: 1px solid #DADADA;
+}
+td {
+  font-size: 14px;
+  line-height: 16px;
+}
+.total {
+  border-top: 1px solid black;
+  padding-left: 25px;
+}
+.valor {
+  text-align: right;
+}
+.lucro {
+  text-align: right;
+  font-size: 10px;
+  line-height: 22px;
+}
+/*rodape*/
+footer {
+  width: 100%;
+  height: 8px;
+  background-color: black;
+}
+
+
+

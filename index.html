@@ -1,0 +1,87 @@
+          <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>projeto individual spa</title>
+     <link rel="shortcut icon" href="acets/img/logo.png" type="image/x-icon">
+     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="assets/css/smartphone.css">
+     <link rel="stylesheet" href="assets/css/tablet_portatil.css">
+     <link rel="stylesheet" href="assets/css/tablet_lendskape.css">
+     <link rel="stylesheet" href="assets/css/desktop.css">      
+</head>
+<body>
+<header> 
+      <nav>   
+          <div id="logo"><img src="assets/img/Ellipse 13.png"alt="logo"></div>
+          <div class="comt-finan">
+               <h4>Comtrole financeiro</h4>
+          </div>
+           <input type="checkbox" id="check">
+          <label for="check" class="label">
+               <div class="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+               </div>
+          </label>         
+     <div class="div_ul">
+          <li class="li_1"><a class="a_1" href="#" onclick="tipo()">cadastro de transaçôes</a></li>
+          <li class="li_2"><a class="a_2" href="#" onclick="limpar()">limpar dados</a></li>
+     </div> 
+     </nav>                                                    
+</header>                    
+<main>     
+     <form>
+          <div class="conteiner_a">                    
+               <div class="sub_conteiner"> 
+                         <div id="nova_transacao">
+                              <h4 >Nova transção</h4>
+                         </div> 
+                    <div class="sub_conteiner_fim">
+                         <div class="div_bloco_a">
+                              <label>Transaçâo</label>
+                              <select name="required" id="inpt-select">
+                                   <option value="compra" id="compra">compra</option>
+                                   <option value="venda" id="venda">venda</option>
+                              </select>
+                         </div>
+                         <div class="div_bloco_b">
+                              <label>Nome da mercadoria</label>
+                              <input type="text" id="input_nome" placeholder="Nome">
+                         </div>
+                         <div class="div_bloco_c">
+                              <label>Valor</label>
+                              <input id="input_valor" type="text" placeholder="0,00">
+                         </div>
+                    </div>     
+                    <div class="div_bloco_d">
+                         <button onclick="transacao()">Adicionar transção</button>
+                    </div>                       
+               </div>
+          </div> 
+     </form>     
+     <table>
+          <caption>Extrato de transaçôes</caption>
+          <tr> 
+               <th class="mercadoria" colspan="2">Mercadoria</th>
+               <th class="valor" colspan="1">Valor</th>
+          </tr>               
+          
+     </table>
+</main>                         
+<footer></footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>     
+                      
+                         
+                             
+                 
+          
+                         
+               
+     
