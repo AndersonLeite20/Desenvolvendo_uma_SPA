@@ -49,5 +49,11 @@
           background-color: white;
           color: blue;
       }
+      #input_subit {
+      width: 40%;
+      margin: 0px 30px 20px 20px;
+      padding: 0px;
+      height: 35px;
+      }
      
 }

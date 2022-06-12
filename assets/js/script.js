@@ -14,14 +14,14 @@ function transacao() {
    Essa função lista todas as keys do localstorage e mostra no HTML.*/
    if(dados != null) {
       recebeobjto.innerHTML = dados.map((dados) => {
-            return (`<tr>
-            <td class="mais">+</td>
-            <td class="descricao">` +dados.nome+ `</td>
-            <td class="soma">${formatterCurrency(Number(dados.valor))}<td><tr>`);
+         return (`<tr>
+         <td class="mais">+</td>
+         <td class="descricao">` +dados.nome+ `</td>
+         <td class="soma">${formatterCurrency(Number(dados.valor))}<td><tr>`);
       })
-      .join(''); //Junta todos os elementos do dados.map e retorna uma string.
-      sinal()
-      somaValores()
+   .join(''); //Junta todos os elementos do dados.map e retorna uma string.
+   sinal()
+   somaValores()
    }
 }
 //Função para somar os valores do input valor.
@@ -44,14 +44,16 @@ function somaValores() {
    Caso seja maior o total é mostrado com o status [LUCRO] ou [PREJUIZO].*/
    if (dados.length > 0) {
       let resultobj = document.querySelector('.resultado');
-      resultobj.innerHTML = `
-      <tr>
-         <td>Total</td
-         td>${formatterCurrency(Number(total))}</td>
-      </tr>`
       resultobj.innerHTML += `
+      <tr class="adicionar">
+         <td>Total</td>
+         <td>${formatterCurrency(Number(total))}</td>
+      </tr>`
+      resultobj.innerHTML = `
          <tr>
-            <td>${Math.sign(total) > 0 ? '[LUCRO]' : '[PREJUÍZO]'}</td>
+            <td>
+               ${Math.sign(total) > 0 ? '[LUCRO]' : '[PREJUÍZO]'}
+            </td>
          </tr>`
    }      
 } 

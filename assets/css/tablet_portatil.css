@@ -33,7 +33,17 @@
           justify-content: end;
           margin-right: 10px;
      }
-     .div_bloco_d > button {
-          width: 200px;
+     .div_input_submit {
+     display: flex;
+     justify-content: end;
      }
+     #input_subit {
+        width: 40%;
+        margin: 0px 10px 20px 20px;
+      }
+     .resultado {
+          display: flex;
+          width: 250px;
+          justify-content: space-between;
+      }
 }
