@@ -1,49 +1,56 @@
 @charset "utf-8";
 @media (min-width:411px) {
-     .conteiner_a {
-          border: 1px solid #DADADA;
-          margin: 20px 0px 20px 0px;
-     }
-     #nova_transacao {
-          margin-bottom: 20px;
-          display: flex;
-          justify-content: center;
-          font-size: 18px;
-          line-height: 22px;
-     }
-     .sub_conteiner {
-          margin-bottom: 0px;
-          padding-bottom: 0px;
-     }
-     
-     .sub_conteiner_fim {
-          display: flex;
-          justify-content: space-around;
-     }
-     .div_bloco_a {
-          width: 20%;
-     }
-     .div_bloco_b {
-          width: 40%;
-     }
-     .div_bloco_c {
-          width: 20%;
-     }
-     .div_bloco_d {
-          justify-content: end;
-          margin-right: 10px;
-     }
-     .div_input_submit {
-     display: flex;
-     justify-content: end;
-     }
-     #input_subit {
+    .conteiner_a {
+        border: 1px solid #DADADA;
+        margin: 20px 0px 20px 0px;
+    }
+    #nova_transacao {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .div_ul {
+        width: 380px;
+        position: fixed;
+        height: 450px;
+    }
+    .sub_conteiner {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .menu_ul {
+        display: flex;
+    }
+    .sub_conteiner_fim {
+        display: flex;
+        justify-content: space-around;
+    }
+    .div_bloco_a {
+        width: 20%;
+    }
+        .div_bloco_b {
+            width: 40%;
+    }
+    .div_bloco_c {
+        width: 20%;
+    }
+    .div_bloco_d {
+        justify-content: end;
+        margin-right: 10px;
+    }
+    .div_input_submit {
+        display: flex;
+        justify-content: end;
+    }
+    #input_subit {
         width: 40%;
         margin: 0px 10px 20px 20px;
-      }
-     .resultado {
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-      }
+    }
+    .resultado {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
 }

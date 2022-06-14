@@ -1,59 +1,75 @@
 @charset "utf-8";
 @media (min-width:768px) {
-     .nav_titulo {
-          position: absolute;
-          left: 7%; 
-      }
-      .label {
-        display: none;
-      }
-      .div_ul {
-        background-color: #C4C4C4;
+    .nav_titulo {
+        position: absolute;
+        left: 7%; 
+    }
+    .comt-finan {
         display: flex;
+        font-size: 20px;
+        width: 30%;
+        margin-left: 90px;
+        height: 30px;
+    }
+    .label {
+        display: none;
+    }
+    .div_ul {
+        width: 360px;
+        height: 60px;
+        margin-top: 0px;
+        position: relative;
+        background-color: #C4C4C4;
+        display: contents;
         flex-direction: inherit;
         padding: 0px;
-        height: 60px;
-        position: relative;
-        width: 40%;
-        margin-right: 20px;
+        width: 50%;
+        position: absolute;
         justify-content: center;
-  
-      }
-      .li_1 {
+    }
+    .div_x {
+        display: none;
+    }
+    .menu_ul {
+        width: 40%; 
+        margin-right: 20px;
+        display: flex;
+        flex-direction: initial;
+    }
+    .li_1 {
+        width: 100%;
         margin-right: 2px;
         background-color: white;
         height: 30px;
         margin-top: 10px;
-      }
-      .li_2 {
+    }
+    .li_2 {
+        width: 100%;
         margin-right: 2px;
         background-color: white;
         height: 30px;
         margin-top: 10px;
-      }
-      .a_1 {
-        
+    }
+    .a_1 {
+        font-size: 13px;
         color: black;
         padding: 5px;
-        font-size: 16px;
         text-align: center;
-      }
-      .a_2 {
-        
+    }
+    .a_2 {
+        font-size: 13px;
         color: black;
         padding: 5px;
-        font-size: 16px;
         text-align: center;
-      }
-      a:hover {
-          background-color: white;
-          color: blue;
-      }
-      #input_subit {
-      width: 40%;
-      margin: 0px 30px 20px 20px;
-      padding: 0px;
-      height: 35px;
-      }
-     
+    }
+    a:hover {
+        background-color: white;
+        color: blue;
+    }
+    #input_subit {
+        width: 40%;
+        margin: 0px 30px 20px 20px;
+        padding: 0px;
+        height: 35px;
+    }   
 }
