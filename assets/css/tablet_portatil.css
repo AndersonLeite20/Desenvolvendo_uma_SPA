@@ -1,5 +1,39 @@
 @charset "utf-8";
 @media (min-width:411px) {
+    #header {
+        display: flex;
+        justify-content: space-around;
+        background-color: #DADADA;
+
+    }
+    .menu {
+        
+    }
+    #nav {
+        
+        height: 500px;
+    }
+    .ul {
+
+    }
+    .li_1 {
+    display: block;
+    margin-top: 10px;
+    }
+    .a_1 {
+        
+        padding-right: 10px;
+        color: white;
+    }
+    .li_2 {
+        display: block;
+        margin-top: 10px;
+    }
+    .a_2 {
+        
+        padding-right: 10px;
+        color: white;
+    }
     .conteiner_a {
         border: 1px solid #DADADA;
         margin: 20px 0px 20px 0px;

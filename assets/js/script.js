@@ -5,6 +5,32 @@ se tiver imformação o json retorna um objeto do tipo javascript.*/
 if (localStorage.getItem('dados')) {
      dados = JSON.parse(localStorage.getItem('dados'));
 }
+
+//Abrir menu
+const btnMobile = document.getElementById("menu")
+
+function leMenu() {
+  
+  const nav = document.getElementById("nav") 
+  nav.classList.toggle('active')
+}
+
+btnMobile.addEventListener('click', leMenu) 
+//Fechar o menu
+let fechar = document.getElementById('x')
+function fechaMenu() {   
+    let nav = document.getElementById('nav')
+    nav.classList.remove('active')
+}
+fechar.addEventListener('clic', fechaMenu) 
+function myfunction() {
+   element.addEventListener("click",myfunction)
+   document.querySelector('.div_ul')
+   if (checkbox == true) {
+      document.getElementsByClassName('menu_ul')
+      
+   }
+}
 //Função para mostrar os dados do localstorage na pagina.
 function transacao() {
    let dados = JSON.parse(localStorage.getItem('dados'));
