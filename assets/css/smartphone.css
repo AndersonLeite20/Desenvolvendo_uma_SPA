@@ -209,6 +209,7 @@ input,select {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 22px;
+    margin-top: 20px;
 }
 .div_bloco_d {
     display: flex;
@@ -277,8 +278,7 @@ th {
 .mais,.menos {
     border-bottom: 1px solid #DADADA; 
     text-align: center;
-    text-align: inherit;
-    padding-left: 30px; 
+    text-align: inherit; 
 }
 .descricao {
     display: flex;

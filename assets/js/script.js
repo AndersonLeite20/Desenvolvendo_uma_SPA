@@ -73,7 +73,7 @@ function limpar () {
       let caixaTexto = confirm('Deseja excluir as transaçãoe?')
       if (caixaTexto == true) {
       localStorage.clear()
-      alert('transações excluidas!')
+      window.alert('transações excluidas!')
       } else {
          alert('Exclusões canseadas')
       }
@@ -129,7 +129,7 @@ function validacao(event) {
       selecao:selecao,
       nome:nome,
       //replaceALL faz a troca de ponto para espaço e de virgula paraq ponto
-      valor :valor.replaceAll('.', '').replaceAll(',','.'),
+      valor: valor.replaceAll('.', '').replaceAll(',','.'),
    })
    /*Transforma os dados do loaclstorage em string.
    Grava os dados no localstorage.*/

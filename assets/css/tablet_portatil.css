@@ -22,6 +22,7 @@
     }
     .menu_ul {
         display: flex;
+        width: 50%;
     }
     .sub_conteiner_fim {
         display: flex;
