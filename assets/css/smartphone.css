@@ -1,256 +1,323 @@
 @charset "utf-8";
-@media (min-width:100px) {
-    body {
-        margin: 0px;
-        padding: 0px;
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        font-family:'lato';
-        font-weight: normal
+/*zerando margens do body*/
+* {
+    margin: 0px;
+    padding: 0px;
     }
-    header {
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-        background-color: #E0E0E0;
-    }
-    header > img {
-        height: 27.6px;
-        margin-top: 15px;
-        margin-left: 22px;
-    }
-    .menu {
-        width: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
-        cursor: pointer;
-    }
-    span {
-        width: 25px;
-        background-color: black;
-        height: 2px;
-        margin-top: 5px;
-    }
-    nav {
-        position: fixed;
-        width: 40%;
-        height: 100%;
-        right: -60%;   
-    }
-    ul {
-        background-color: black;
-        margin: 0px;
-        width: 100%;
-        height: 0%;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-    .mostranav {
-        width: 60%;
-        height: 100%; 
-        opacity: 1 inportant;
-        margin: 0px;  
-        position: fixed; 
-        background: black;
-        transition: 0.7s ease-out; 
-        z-index: 3;
-        padding: 0px;
-        transform: translateX(0);
-        flex-direction: column;
-        justify-content: flex-start;
-        display: block;
-        left: 60%;
-    }
-    .escondeMenu {
-        left: 100%;
-        transition: 0.7s ease-out; 
-    }
-    .li {
-        display: block;
-        list-style: none;
-        color: white;
-        cursor: pointer;
-    }
-    .li > p {
-        color: white;
-        width: 30px;
-        height: 30px;
-        margin: 0px;
-        margin: 10px 10px;
-        font-size: 30px;
-        text-align: center;
-    }
-    .li_hist {
-        list-style: none;
-        display: block;
-    }
-    .li_limpar {
-        list-style: none;
-        display: block;
-    }
-    .li_limpar > a {
-        padding: 10px 20px;
-        display: block;
-    }
-    .li_hist > a {
-        padding: 10px 20px;
-        display: block;
-    }
-    a {
-        text-decoration: none;
-        color: white;
-        display: block;
-    }
-    a:hover {
-        background-color: #C4C4C4;
-        color: black;
-    }
-    .main_1 {
-        margin-bottom: 50px;
-            height: 495px;
-    }
-    #form {
-        width: 100%;
-        display: flex;
-        height: 280px;
-        flex-direction: column;
-    }
-    .div_do_form {
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        font-size: 14px;
-    }
-    .div_nt {
-        display: none;
-    }
-    .div_select {
-        display: flex;
-        flex-direction: column;
-    }
-    .div_select > p {
-        margin-bottom: 9px;
-        font-size: 14px;
-    }
-    #input_select {
-        margin-bottom: 20px;
-        border-radius: 4px, solid #E0E0E0;
-        border: 1px solid #E0E0E0;
-        height: 32px;
-        margin-top: 1px;
-        padding: 5px 12px;
-        font-size: 14px;
-    }
-    .div_mercadoria {
-        display: flex;
-        flex-direction: column;
-    }
-    .div_mercadoria > label {
-        margin-bottom: 9px;
-        font-size: 14px;
-    }
-    .div_mercadoria > input {
-        margin-bottom: 20px;
-        border-radius: 4px, solid #E0E0E0;
-        border: 1px solid #E0E0E0;
-        height: 32px;
-        padding: 5px 12px;
-        box-sizing: border-box;
-        font-size: 14px;
-    }
-    .div_valor {
-        display: flex;
-        flex-direction: column;
-    }
-    .div_valor > label {
-        margin-bottom: 9px;
-        font-size: 14px;
-    }
-    .div_valor > input {
-        margin-bottom: 20px;
-        border-radius: 4px, solid #E0E0E0;
-        border: 1px solid #E0E0E0;
-        height: 32px;
-        padding: 5px 12px;
-        box-sizing: border-box;
-        margin-top: 1px;
-        font-size: 14px;
-    }
-    .div_button {
-        display: flex;
-        justify-content: center;
-    }
-    .div_button > input {
-        width: 90%;
-        height: 32px;
-        border-radius: 4px;
-        background-color: black;
-        color: white;
-        cursor: pointer;
-        position: absolute;
-    }
-    
-    table {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        margin-top: 25px;
-    }
-    tbody {
-        display: flex;
-        flex-direction: column;
-        margin: 20px 0px;
-    }
-    .tr_a {
-        display: flex;
-        justify-content: space-between;
-        padding: 0px 29px;
-        height: 30px;
-        align-items: center;
-        border-bottom: 1px solid #E0E0E0;
-    }
-    .tr_b {
-        width: 98%;
-        display: flex;
-        justify-content: space-between;
-        height: 30px;
-        align-items: center;
-        border-bottom: 1px solid #E0E0E0;
-    }
-    .td_+ {
-        width: 20px;
-        display: flex;
-        justify-content: center;   
-    }
-    .td_mercadoria {
-        width: 70%;
-        position: absolute;
-        margin-left: 30px;
-    }
-    .tr_d {
-        width: 98%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2px;
-        border-top: 1px solid #E0E0E0;
-    }
-    .td_total{
-        margin-left: 29px;
-    }
-    .lucro_preju {
-        width: 98%;    
-        display: flex;
-        justify-content: end;
-        font-size: 10px;
-    }
-    footer {
-        width: 100%;
-        height: 25px;
-        background-color: black;
-    }
-}   
+body {
+    font-family: lato,sans-serif;
+    overflow-x: hidden;
+}
+/*Header smartphone*/
+header {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+nav {
+    background-color: #C4C4C4;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+#logo {
+    width: 30px;
+    height: 27.63px;
+    margin-top: 12px;
+    margin-left: 22px;
+}
+.comt-finan {
+    margin: auto;
+}
+#check {
+    display: none;
+}
+.div_ul:active {
+    transform: translateX(0);
+    overflow-x: hidden;
+}
+.label {
+    position: relative;
+    width: 60px;
+}
+.div_ul {
+    position: fixed;
+    display: block;
+    background-color: black;
+    height: 100%;
+    transition: 0.5s;
+    width: 60%;    
+    left: 50%;
+    flex-direction: column;
+    width: 350px;
+    z-index: 3;
+}
+.menu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 16px;
+    right: 22px;
+    z-index: 1;
+    cursor: pointer;
+}
+.menu_ul {
+    display: flex;
+    flex-direction: column;
+    left: 52%;
+    width: 48%;
+    display: block;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+}
+.div_x {
+    display: block;
+    height: 30px;
+}
+.px {
+    margin-top: 10px;
+    margin-left: 20px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+}
+.open {
+    transform: translateX(-351px);
+}
+.fechar {
+    width: 20px;
+    height: 30px;
+    display: flex;
+    z-index: 2;
+}
+span {
+    width: 23px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.597);
+    margin-top: 4px;
+    display: block;
+}
+.fechar > span {
+    background-color: white;
+    width: 23px;
+    height: 3px;
+    margin-top: 4px;
+    display: block;
+}
+
+input[type="checkbox"]:checked ~ .div_ul {
+    transform: translateX(350px); 
+    display: block;
+}
+input[type="checkbox"]:checked ~ .px {
+    transform: translateX(-350px); 
+    display: block;
+    right: -350px;
+}
+a {
+    display: block;
+    display: block;
+    font-size: 16px;
+    line-height: 19.2px;
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    background-color: #C4C4C4;
+    color: black;
+}
+li {
+    color: white;
+    display: block;
+} 
+.li_1 {
+    margin-top: 10px;
+}
+.a_1 {
+    text-align: end;
+    padding-right: 10px;
+    color: white;
+}
+.a_2 {
+    text-align: end;
+    padding-right: 10px;
+    color: white;
+}
+/*section*/
+main {
+    padding: 0px 20px;
+}
+.container_a {
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+.sub_conteiner {
+    margin-bottom: 28.56px;
+    border-bottom: 1px solid #dadadacf;
+    padding-bottom: 10px;
+    margin-top: 29px;
+}
+#input_subit {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0px;
+}
+#nova_transaçao {
+    display: none;
+}
+input,label,select {
+    font-size: 14px;
+    line-height: 22px;
+}
+input,select {
+    border: 1px solid #dadadacf;
+    height: 32px;
+    padding-left: 12px;
+}
+#input_nome,#input_valor {
+    height: 32px;
+    padding-left: 12px;
+}
+.div_bloco_a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.div_bloco_b {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.div_bloco_c {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+.div_bloco_d {
+    display: flex;
+    height: 32px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+#nova_transacao {
+    display: none;
+}
+/*tabela*/
+table {
+    border-collapse: collapse;
+    width: 98%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+/*titulo da tabela*/
+caption {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 21px;
+}
+tbody {
+    display: flex;
+    flex-direction: column;
+}
+.div_bloco_d > button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+}
+th {
+    border-bottom: 1px solid #DADADA;
+}
+.mer_val {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.total {
+    border-top: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+    flex-direction: column; 
+    flex-direction: column;  
+    display: flex;
+    justify-content: space-between;  
+}
+.mercadoria {
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 25px;
+}
+.valor {
+    text-align: right;
+    font-size: 14px;
+    line-height: 22px;
+}
+.mais,.menos {
+    border-bottom: 1px solid #DADADA; 
+    text-align: center;
+    text-align: inherit; 
+}
+.descricao {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #DADADA;
+}
+.soma {
+    border-bottom: 1px solid #DADADA;
+    text-align: right;
+    font-size: 14px;
+    line-height: 22px;
+}
+td {
+    font-size: 10px;
+    line-height: 16px;
+}
+.adicionar {
+    display: flex;
+    flex-direction: column;
+}
+.resultado {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 15px 
+}
+.valor {
+    text-align: right;
+}
+.lucro {
+    text-align: right;
+    font-size: 10px;
+    line-height: 22px;
+}
+/*rodape*/
+footer {
+    width: 100%;
+    position: relative;
+    bottom: -35px;
+    height: 10px;
+    background-color: black;
+}
