@@ -1,96 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>projeto individual spa</title>
-     <link rel="shortcut icon" href="acets/img/logo.png" type="image/x-icon">
-     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="assets/css/smartphone.css">
-     <link rel="stylesheet" href="assets/css/tablet_portatil.css">
-     <link rel="stylesheet" href="assets/css/tablet_lendskape.css">
-     <link rel="stylesheet" href="assets/css/desktop.css"> 
-     <link rel="shortcut icon"href="assets/img/Ellipse 13.png" type="image/x-icon">
-     <script type="text/javascript"src="https://gc.kis.v2.scr.kaspersky-labs.com/FD345678989-
-     C M,;
-     6C42-EBFA-4E12-B309-BB3FDD723AC1/main.js? attr=xfFZ41ke0JZlFTGtcQQZTpVUtG8OgAZe8KIf8MTS7ACnMEPjIJu-2P2fxQqAky3gb46sab4GNcrX8aAFo0i4TIAq2DuWc4CW3Jv9IZJnsTkr60fJUFXW3NKqYwRyasDf6AYtyMf2z5ptu043FrU91w"
-      charset="UTF-8"></script>
-     </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto individual</title>
+    <link rel="shortcut icon" href="assets/img/Ellipse 13.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/smartphone.css"> 
+    <link rel="stylesheet" href="assets/css/tablet_indiskape.css">
+    <link rel="stylesheet" href="assets/css/tablet_portati.css">
 </head>
 <body>
-   <header> 
-         <nav>   
-            <div id="logo"><img src="assets/img/Ellipse 13.png"alt="logo"></div>
-            <div class="comt-finan">
-               <h4>Comtrole financeiro</h4>
-            </div>
-            <input type="checkbox" id="check">
-            <label for="check" class="label">
-               <div class="menu">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-               </div>
-            </label>         
-      <div class="div_ul">
-         <div class="div_x" >
-            <input type="checkbox" id="check">
-            <label for="check" class="label"><p class="px">x</p></label>   
-         </div>
-         <ul class="menu_ul">
-            <li class="li_1"><a class="a_1" href="#">cadastro de transaçôes</a></li>
-            <li class="li_2"><a class="a_2" href="#" onclick="limpar()">limpar dados</a></li>
-         </ul>
-      </div> 
-      </nav>                                                    
-   </header>                    
-   <main>     
-      <form onsubmit="validacao(event); return false">
-         <div class="conteiner_a">                    
-            <div class="sub_conteiner"> 
-               <div id="nova_transacao">
-                  <h4 >Nova transção</h4>
-               </div> 
-               <div class="sub_conteiner_fim">
-                  <div class="div_bloco_a">
-                     <label>Transaçâo</label>
-                     <select name="required" id="inpt-select">
-                        <option value="compra" id="compra">compra</option>
-                        <option value="venda" id="venda">venda</option>
-                     </select>
-                  </div>
-                  <div class="div_bloco_b">
-                     <label>Nome da mercadoria</label>
-                     <input type="text" id="input_nome" placeholder="Nome" value="input_nome" required>
-                  </div>
-                  <div class="div_bloco_c">
-                     <input id="input_valor" type="text" placeholder="0,00" value="input_valor" onkeyup="moeda()" required>
-                  </div>
-               </div>         
-               <div class="div_input_submit">
-                  <input id="input_subit" class="button" type="submit" value="Adicionar transação">
-               </div>                          
-            </div>
-         </div> 
-      </form>     
-      <table>
-         <caption>Extrato de transaçôes</caption>
-         <tr class="mer_val"> 
-            <th class="mercadoria" colspan="2">Mercadoria</th>
-            <th class="valor" colspan="1">Valor</th>
-         </tr> 
-         <tr class="total">
-            <td>Nenhuma mercadoria cadastrada</td>
-         </tr>
-         <tr class="resultado">
-            <td></td>
-         </tr>              
-      </table>
-   </main>                         
-   <footer></footer>
-   <script src="assets/js/script.js"></script>
-   <script>transacao()</script>
+    <header>
+        <img src="assets/img/Ellipse 13.png" alt="logo">
+        <h3>Comtrole financeiro</h3>
+        <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <div class="li">
+                    <p class="p">x</p>
+                </div>
+                <li class="li_limpar"><a class="a" href="#" >Limpar</a></li>
+                <li class="li_hist"><a href="#">Historico de transação</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_1">
+        <form class="form" onsubmit="validacao(event); return false">
+            <div class="div_nt">
+                    <h3>Nova transação</h3>
+                </div>
+            <div class="div_do_form"> 
+                <div class="div_select">
+                    <p>Tipo de transação</p>
+                    <select name="required" id="input_select">
+                        <option id="compra" value="compra">Compra</option>
+                        <option id="venda" value="venda">Venda</option>
+                    </select>
+                </div>
+                <div class="div_mercadoria">
+                    <label for="">Nome da mercadoria</label>
+                    <input id="input-nome" type="text" placeholder="Mercadoria" required>
+                </div>
+                <div class="div_valor">
+                    <input id="input_valor" type="nunber" placeholder="0,00" value="input_valor" onkeyup="moeda()"required >
+                </div>
+            </div>    
+            <div class="div_button">
+                <input type="submit" id="input_subit" value="Adicionar transação">
+            </div>   
+        </form>
+        <table>
+            <caption>Extrato de transações</caption>
+            <tr class="tr_a">
+                <th>Mercadoria</t>
+                <th>Valor</th>
+            </tr>
+            <thead>
+                <tr class="tr_b">
+                <td class="td_mercadoria">Nenhuma mercadoria cadastrada.</td>
+                </tr>
+            </thead>
+            <thead class="thead-b">     
+            </thead>   
+        </table>     
+    </main>
+    <footer></footer>
 </body>
-</html>                         
+<script src="assets/js/script.js"></script>
+<Script>transacao()</Script>
+</html>
