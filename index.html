@@ -22,10 +22,14 @@
         <nav>
             <ul>
                 <div class="li">
-                    <p class="p">x</p>
-                </div>
-                <li class="li_limpar"><a class="a" href="#" >Limpar</a></li>
-                <li class="li_hist"><a href="#">Historico de transação</a></li>
+                    <p class="fechaMenu">x</p>
+                </div>    
+                <li class="li_limpar">
+                    <a class="a" href="#" >Limpar</a>
+                </li>
+                <li class="li_hist">
+                    <a href="#">Historico de transação</a>
+                </li> 
             </ul>
         </nav>
     </header>
@@ -47,30 +51,39 @@
                     <input id="input-nome" type="text" placeholder="Mercadoria" required>
                 </div>
                 <div class="div_valor">
-                    <input id="input_valor" type="nunber" placeholder="0,00" value="input_valor" onkeyup="moeda()"required >
+                    <input id="input_valor"  placeholder="0,00" onkeyup="moeda(event)" required>
                 </div>
             </div>    
             <div class="div_button">
                 <input type="submit" id="input_subit" value="Adicionar transação">
             </div>   
-        </form>
-        <table>
-            <caption>Extrato de transações</caption>
-            <tr class="tr_a">
-                <th>Mercadoria</t>
-                <th>Valor</th>
-            </tr>
-            <thead>
-                <tr class="tr_b">
-                <td class="td_mercadoria">Nenhuma mercadoria cadastrada.</td>
+        </form>      
+        <div class="tabela">
+            <h4>Extrato de transações</h4>
+            <table>
+                <tr class="tr_a">
+                    <th>Mercadoria</t>
+                    <th>Valor</th>
                 </tr>
-            </thead>
-            <thead class="thead-b">     
-            </thead>   
-        </table>     
+                <thead>    
+                    <tr class="tr_b">
+                        <td class="td_mercadoria">
+                            Nenhuma mercadoria cadastrada.
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="total">
+                   </tr>
+                   <tr class="tr-saldolucro">
+                    <td></td>
+                   </tr>
+                </tbody>
+            </table>
+        </div>     
     </main>
     <footer></footer>
+    <script src="assets/js/script.js"></script>
+    <script>transacao()</script>
 </body>
-<script src="assets/js/script.js"></script>
-<Script>transacao()</Script>
 </html>

@@ -1,8 +1,4 @@
-@charset "utf-8";
-@font-face {
-    font-family: 'Lato';
-    src: url('Lato-Bold') format('TrueType');       
-}    
+@charset "utf-8";   
 @media (min-width:100px) {
     body {
         margin: 0px;
@@ -32,7 +28,8 @@
         align-items: center;
         margin-right: 20px;
         cursor: pointer;
-    }
+        left: 105%;
+    }   
     span {
         width: 25px;
         background-color: black;
@@ -40,39 +37,24 @@
         margin-top: 5px;
     }
     nav {
+        background-color: black;
         position: fixed;
+        right: 30%;
+        width: 30%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        visibility: hidden;
+    }
+    .abrir {
+        background-color: black;
+        position: absolute;
+        left: 60%;
         width: 40%;
         height: 100%;
-        right: -60%;   
-    }
-    ul {
-        background-color: black;
         margin: 0px;
-        width: 100%;
-        height: 0%;
         padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-    .mostranav {
-        width: 60%;
-        height: 100%; 
-        opacity: 1 inportant;
-        margin: 0px;  
-        position: fixed; 
-        background: black;
-        transition: 0.7s ease-out; 
-        z-index: 3;
-        padding: 0px;
-        transform: translateX(0);
-        flex-direction: column;
-        justify-content: flex-start;
-        display: block;
-        left: 60%;
-    }
-    .escondeMenu {
-        left: 100%;
-        transition: 0.7s ease-out; 
+        visibility: initial;
     }
     .li {
         display: block;
@@ -99,11 +81,11 @@
         display: block;
     }
     .li_limpar > a {
-        padding: 10px 20px;
+        padding: 10px 10px;
         display: block;
     }
     .li_hist > a {
-        padding: 10px 20px;
+        padding: 10px 10px;
         display: block;
     }
     a {
@@ -117,7 +99,7 @@
     }
     .main_1 {
         margin-bottom: 50px;
-            height: 495px;
+    height: 495px;
     }
     .form {
         width: 100%;
@@ -198,8 +180,17 @@
         color: white;
         cursor: pointer;
         position: absolute;
+    }    
+    .tabela {
+        height: 50%;
+        margin: 10px;
+        padding-top: 20px;
     }
-    
+    h4 {     
+        text-align: center;
+        height: 20px;
+        margin-top: 10px;
+    }
     table {
         display: flex;
         width: 100%;
@@ -246,26 +237,25 @@
         border: none;
         font-size: 10px;
     }
-    .td_total{
-        margin-left: 29px;
-    }
-    .lucro_preju > td{
-        margin-left: 30px;
-    }
-    .lucro_preju {
-        width: 95%;    
+    .total{
+        width: 95%;
         display: flex;
         justify-content: space-between;
-        font-size: 18px;
-        font-weight: 600;
-        border-bottom: none;
-        line-height: 30px;
-         margin-top: 3px;
+        margin-top: 3px;
         border-top: 1px solid #E0E0E0;
+    }
+    .total > td {
+        margin-left: 30px;
+    }
+    .tr-saldolucro {
+        display: flex;
+        justify-content: end;
+        font-size: 10px;
+        width: 95%;
     }
     footer {
         width: 100%;
         height: 25px;
         background-color: black;
     }
-}   
+}

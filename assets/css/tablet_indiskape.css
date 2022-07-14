@@ -7,7 +7,6 @@
     .li_limpar {
         width: 220px;
         height: 33px;
-        background-color: white;
         margin-right: 1px;
         position: relative;
         top: 10px;
@@ -15,7 +14,6 @@
     .li_hist {
         width: 220px;
         height: 33px;
-        background-color: white;
         height: 33px;
         margin-left: 1px;
         position: relative;
@@ -58,5 +56,21 @@
     }
     .div_button > input {
         width: 40%;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+    a:hover {
+        background-color: #C4C4C4;
+        color: black;
+    }
+    .tabela {
+    width: 100%;
+    height: 100%;
+    }
+    table {
+        width: 100%;
     }
 }
