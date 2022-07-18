@@ -62,19 +62,22 @@ function somaValores() {
     /*Verificar se o temanho dos dados e maior que zero.
     Caso seja maior o total é mostrado com o status [LUCRO] ou [PREJUIZO].*/  
     if(dados.length > 0) {
+        var lucPrej = ''
+            if(total > 0) {
+                lucPrej = '[LUCRO]'
+            }    
+            if(total < 0) {
+                lucPrej = '[PREJUÍZO]'
+            }
+        }             
         let resultobj = document.querySelector('.total')
         resultobj.innerHTML = `
         <tr class="lucro_preju">
-            <td>Total</td>
-            <td>${formatterCurrency(Number(total < 0 ? total*-1 : total))}</td>
-        </tr>`    
-        let lucPrej = document.querySelector('.tr-saldolucro')       
-        lucPrej.innerHTML = `
-        <tr class="tr_d">
-            <td>${Math.sign (total) > 0 ? '[LUCRO]' : '[PREJUÍZO]'}</td>
-        </tr>`
-    }           
-}
+            <td class="total-td">Total</td>
+            <td class="td-total">${formatterCurrency(Number(total < 0 ? total*-1 : total))}</td>
+        </tr><span class="span">${lucPrej}</span>  
+        `          
+    }
 /*
 // função para apagar os dados do extrato e desenha novamente o extrato vazio
 function atualizar() {
