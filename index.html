@@ -1,85 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projeto individual</title>
-    <link rel="shortcut icon" href="assets/img/Ellipse 13.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/smartphone.css"> 
-    <link rel="stylesheet" href="assets/css/tablet_indiskape.css">
-    <link rel="stylesheet" href="assets/css/tablet_portati.css">
-</head>
-<body>
-    <header>
-        <img src="assets/img/Ellipse 13.png" alt="logo">
-        <h3>Comtrole financeiro</h3>
-        <div class="menu">
-            <span></span>
-            <span></span>
-            <span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>SPA</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <header>
+        <div class="div-header">
+          <img class="img" src="./assets/img/Ellipse 13.png" alt="logo" />
+          <h2>Controle financeiro</h2>
+          <img class="img2" src="./assets/img/59165.png" alt="menu" />
         </div>
-        <nav>
-            <ul>
-                <div class="li">
-                    <p class="fechaMenu">x</p>
-                </div>    
-                <li class="li_limpar">
-                    <a class="a" href="#" >Limpar</a>
-                </li>
-                <li class="li_hist">
-                    <a href="#">Historico de transação</a>
-                </li> 
-            </ul>
-        </nav>
-    </header>
-    <main class="main_1">
-        <form class="form" onsubmit="validacao(event); return false">
-            <div class="div_nt">
-                    <h3>Nova transação</h3>
-                </div>
-            <div class="div_do_form"> 
-                <div class="div_select">
-                    <p>Tipo de transação</p>
-                    <select name="required" id="input_select">
-                        <option id="compra" value="compra">Compra</option>
-                        <option id="venda" value="venda">Venda</option>
-                    </select>
-                </div>
-                <div class="div_mercadoria">
-                    <label for="">Nome da mercadoria</label>
-                    <input id="input-nome" type="text" placeholder="Mercadoria" required>
-                </div>
-                <div class="div_valor">
-                    <input id="input_valor"  placeholder="0,00" onkeyup="moeda(event)" required>
-                </div>
-            </div>    
-            <div class="div_button">
-                <input type="submit" id="input_subit" value="Adicionar transação">
-            </div>   
-        </form>      
-        <div class="tabela">
-            <h4>Extrato de transações</h4>
-            <table>
-                <tr class="tr_a">
-                    <th>Mercadoria</t>
-                    <th>Valor</th>
-                </tr>
-                <thead>    
-                    <tr class="tr_b">
-                        <td class="td_mercadoria">
-                            Nenhuma mercadoria cadastrada.
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="total">
-                   </tr>
-                </tbody>
-            </table>
-        </div>     
-    </main>
-    <script src="assets/js/script.js"></script>
-    <script>transacao()</script>
-</body>
+      </header>
+      <section>
+        <form class="form">
+          <div class="titulo">
+            <p>Nova transação</p>
+          </div>
+          <div class="form-conteiner">
+            <div class="form-comt-caixa">
+              <label>Tipo de transação</label>
+              <select class="select" name="select" id="select">
+                <option value="compra">Compra</option>
+                <option value="venda">Venda</option>
+              </select>
+            </div>
+            <div class="form-comt-caixa-meio">
+              <label>Nome da mercadoria</label>
+              <input class="input input-mercadoria" type="text" />
+            </div>
+            <div class="form-comt-caixa">
+              <label>Valor</label>
+              <input class="input input-valor" type="number" />
+            </div>
+          </div>
+          <div class="button">
+            <button>
+              <p>Adicionar transação</p>
+            </button>
+          </div>
+        </form>
+        <table class="table">
+            <caption>
+              <h4>Extrato de transações</h4>
+            </caption>
+          <tbody>
+            <tr class="tr-superior">
+              <th>Mercadoria</th>
+              <th>Valor</th>
+            </tr>
+            <tr class="tr-intermediaria">
+              <td class="td+">+</td>
+              <td class="td-nome">Lorem, ipsum dolor.</td>
+              <td class="td-valor">R$ 12.999,99</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr class="tr-inferior">
+              <td><strowidth:>Total</strong></td>
+              <td>R$ 12.909,99</td>
+            </tr>
+            <tr class="tr-span">
+                <td><span>[LUCRO]</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <footer></footer>
+    </div>
+  </body>
 </html>
