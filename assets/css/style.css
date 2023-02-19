@@ -13,13 +13,75 @@ body {
   height: 23px;
   cursor: pointer;
 }
-.div-header {
+header {
   background-color: #e0e0e0;
+}
+.div-header {
   display: flex;
   height: 30px;
   padding: 15px 15px;
   align-items: center;
   justify-content: space-between;
+}
+.titulo {
+  height: 30px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.divMenu {
+  margin: 10px;
+}
+#imgMenu {
+  width: 30px;
+  height: 30px;
+}
+nav {
+  width: 400px;
+  height: 30px;
+}
+.botoes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.excluir {
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+.dados {
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+.excluir:hover {
+  background-color: #e0e0e0;
+  border: 1px solid white;
+}
+.dados:hover {
+  background-color: #e0e0e0;
+  border: 1px solid white;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .form {
   border: 1px solid #979797;
@@ -27,8 +89,12 @@ body {
   padding: 20px;
 }
 .titulo {
+  width: 450px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+.novaTransaao {
+  display: none;
 }
 .form-conteiner {
   display: flex;
@@ -49,13 +115,16 @@ body {
   gap: 5px;
 }
 .select {
-  height: 30px;
+  height: 25px;
   border: 1px solid #e0e0e0;
 }
 .input {
-  height: 23px;
+  height: 20px;
   border: 1px solid #979797;
   border-radius: 4px;
+}
+.input-input-valor {
+  height: 20px;
 }
 .button {
   display: flex;
@@ -69,7 +138,7 @@ button {
   justify-content: center;
   height: 30px;
   align-items: center;
-  width: 250px;
+  width: 45%;
   border-radius: 4px;
 }
 .table {
@@ -107,8 +176,6 @@ tr {
   position: absolute;
   margin-left: 20px;
 }
-.td-valor {
-}
 .tr-span {
   display: flex;
   justify-content: end;
@@ -116,3 +183,86 @@ tr {
   font-size: 10px;
   border: 0px;
 }
+.img2 {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .div-header {
+    height: 40px;
+    justify-content: space-around;
+  }
+  .divMenu {
+    display: none;
+  }
+  .nav {
+    display: flex;
+  }
+  section {
+    display: flex;
+  }
+  .form {
+    width: 40%;
+    height: 250px;
+    margin-left: 7%;
+    font-size: 17px;
+  }
+  .table {
+    width: 45%;
+  }
+  .form-conteiner {
+    height: 100px;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0px;
+  }
+  .form-comt-caixa {
+    margin: 40px 0px;
+  }
+  .form-comt-caixa-meio {
+    margin: 40px 0px;
+  }
+  .form-comt-caixa {
+    margin: 40px 0px;
+  }
+  .table {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .divMenu {
+    display: none;
+  }
+  section {
+    display: flex;
+  }
+  .form {
+    width: 35%;
+    height: 250px;
+  }
+  .novaTransaao {
+    display: flex;
+    justify-content: center;
+  }
+  .form-conteiner {
+    gap: 5px;
+    width: 100%;
+    font-size: 11px;
+  }
+  .form-comt-caixa {
+    width: 30%;
+  }
+  .form-comt-caixa-meio {
+    width: 30%;
+  }
+  .form-comt-caixa {
+    width: 30%;
+  }
+}
+/* .nav {
+   height: 890px;
+   position: fixed;
+   background-color: black;
+   left: 61%;
+ }*/
