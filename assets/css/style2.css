@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+@media only screen and (max-width: 380px) {
+  .div-header {
+    width: 100%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .divMenu {
+    width: 100%;
+    display: flex;
+    justify-content: inherit;
+  }
+  .img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .img2 {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .nav {
+    width: 55%;
+    position: fixed;
+    height: 600px;
+    background-color: black;
+    left: 45%;
+    top: 0px;
+    display: none;
+  }
+}
