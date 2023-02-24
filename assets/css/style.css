@@ -1,293 +1,177 @@
-.div-header {
-  display: flex;
-  height: 30px;
-  padding: 15px 15px;
-  align-items: center;
-  justify-content: space-between;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
-.divMenu {
-  margin: 10px;
-}
-#imgMenu {
-  width: 30px;
-  height: 30px;
-}
-.nav {
-  width: 400px;
-  height: 30px;
-}
-.botoes {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.excluir {
-  width: 150px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid black;
-  background-color: white;
-  cursor: pointer;
-}
-.dados {
-  width: 150px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-left: 1px solid black;
-  background-color: white;
-  cursor: pointer;
-}
-.excluir:hover {
-  background-color: #e0e0e0;
-  border: 1px solid white;
-}
-.dados:hover {
-  background-color: #e0e0e0;
-  border: 1px solid white;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: red;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.form {
-  border: 1px solid #979797;
-  margin: 20px;
-  padding: 20px;
-}
-
-.novaTransaao {
-  display: none;
-}
-.form-conteiner {
-  display: flex;
-  height: 60px;
-  flex-direction: unset;
-  justify-content: space-between;
-}
-.form-comt-caixa {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 200px;
-}
-.form-comt-caixa-meio {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.select {
-  height: 25px;
-  border: 1px solid #e0e0e0;
-}
-.input {
-  height: 20px;
-  border: 1px solid #979797;
-  border-radius: 4px;
-}
-.input-input-valor {
-  height: 20px;
-}
-.button {
-  display: flex;
-  justify-content: end;
-  margin-top: 15px;
-}
-button {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  height: 30px;
-  align-items: center;
-  width: 45%;
-  border-radius: 4px;
-}
-.table {
-  width: 100%;
-  border-radius: 4px;
-  padding: 20px;
-}
-caption {
-  width: 50%;
-  margin: auto;
-}
-tr {
-  border-top: 1px solid #979797;
-  border-bottom: 1px solid #979797;
-}
-.tr-superior {
-  display: flex;
-  justify-content: space-between;
-  border: 0px;
-  padding: 0px 20px;
-}
-.tr-intermediaria {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 20px 0px 0px;
-}
-.tr-inferior {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 20px;
-  border: 0px;
-  border-top: 1px solid #979797;
-}
-.td-nome {
-  position: absolute;
-  margin-left: 20px;
-}
-.tr-span {
-  display: flex;
-  justify-content: end;
-  margin: 0px 20px;
-  font-size: 10px;
-  border: 0px;
-}
-.img2 {
-  display: none;
-}
-
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 380px) {
   .div-header {
-    height: 40px;
-    justify-content: space-around;
-  }
-  .divMenu {
-    display: none;
-  }
-  .nav {
-    display: flex;
-  }
-  section {
-    display: flex;
-  }
-  .form {
-    width: 40%;
-    height: 250px;
-    margin-left: 7%;
-    font-size: 17px;
-  }
-  .table {
-    width: 45%;
-  }
-  .form-conteiner {
-    height: 100px;
-    align-items: center;
-    gap: 5px;
-    margin: 10px 0px;
-  }
-  .form-comt-caixa {
-    margin: 40px 0px;
-  }
-  .form-comt-caixa-meio {
-    margin: 40px 0px;
-  }
-  .form-comt-caixa {
-    margin: 40px 0px;
-  }
-  .table {
-    font-size: 17px;
-  }
-}
-
-@media only screen and (min-width: 1220px) {
-  .divMenu {
-    display: none;
-  }
-  section {
-    display: flex;
-  }
-  .form {
-    width: 45%;
-    height: 250px;
-    font-size: 25px;
-  }
-  .table {
-    width: 50%;
-    font-size: 20px;
-  }
-  .novaTransaao {
-    display: flex;
-    justify-content: center;
-  }
-  .form-conteiner {
-    gap: 5px;
     width: 100%;
-    font-size: 20px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
   }
-  .form-comt-caixa {
-    width: 30%;
+  .divMenu {
+    width: 100%;
+    display: flex;
+    justify-content: inherit;
   }
-  .form-comt-caixa-meio {
-    width: 35%;
+  .img {
+    width: 25px;
+    height: 25px;
   }
-}
-@media only screen and (min-width: 765px) {
+  .img2 {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .nav {
+    width: 65%;
+    position: fixed;
+    height: 500px;
+    background-color: black;
+    color: white;
+    left: 45%;
+    top: 0px;
+    left: 100%;
+    transition: 0.3s;
+  }
+  .navFecha {
+    width: 65%;
+    position: fixed;
+    height: 500px;
+    background-color: black;
+    color: white;
+    left: 45%;
+    top: 0px;
+    transition: 0.3s;
+  }
+  .x {
+    width: 100%;
+    height: 40px;
+  }
+  .xx {
+    width: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .botoes {
+    padding: 5px 20px;
+  }
+  .excluir,
+  .dados {
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .excluir,
+  .dados {
+    cursor: pointer;
+    padding: 0px 10px;
+    transition: 0.5s;
+    margin: 5px 0px;
+  }
+  .excluir:hover,
+  .dados:hover {
+    transform: translateX(#e0e0e0);
+  }
   section {
     display: flex;
-  }
-  .form {
-    width: 40%;
-  }
-  .table {
-    width: 55%;
-  }
-
-  .nav {
-    position: fixed;
-    background-color: black;
-    height: 800px;
-    left: 65%;
-  }
-}
-@media only screen and (min-width: 420px) {
-  .nav {
+    flex-direction: column;
+    align-items: center;
   }
   .novaTransaao {
     display: flex;
     justify-content: center;
-    font-size: 20px;
+    display: none;
   }
-  section {
+  .form {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .form-conteiner {
-    flex-direction: column;
-    flex-direction: column;
-    height: 160px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+  }
+  .select {
+    height: 23px;
   }
   .form-comt-caixa,
-  .form-comt-caixa-meio,
   .form-comt-caixa-meio {
-    width: 100%;
-    height: 50px;
-    border: none;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    margin: 5px 0px;
   }
-  .button > button {
+  .button {
     width: 100%;
-    justify-content: center;
+    padding: 0px 10px;
+  }
+  .botao {
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    color: white;
+  }
+  hr {
+    margin: 20px;
+    width: 95%;
+    height: 2px;
+    background-color: #e0e0e0;
   }
   .table {
-  }
-  caption {
-    font-size: 20px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
   }
   .tr-superior {
-    font-size: 17px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    align-items: center;
+    padding: 0px 15px;
+    border-bottom: 2px solid #d4b6b6;
   }
-  .thTm {
-    line-height: 30px;
+  h4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .tr-intermediaria {
+    height: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #d4b6b6;
+  }
+  .td-nome {
+    position: absolute;
+    margin-left: 15px;
+  }
+  .tr-inferior {
+    height: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    margin-top: 2px;
+    border-top: 2px solid #d4b6b6;
+  }
+  .td-total {
+    margin-left: 15px;
+  }
+  .tr-span {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: 0px 10px;
+    font-size: 10px;
   }
 }
