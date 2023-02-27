@@ -190,8 +190,9 @@
     align-items: baseline;
   }
   .form {
+    width: 45%;
+    margin: 30px;
     border: 1px solid #d4b6b6;
-    margin: 10px;
     padding: 10px;
   }
   .novaTransaao {
@@ -227,7 +228,7 @@
     display: none;
   }
   .table {
-    width: 100%;
+    width: 55%;
     margin: 0px 10px;
     display: flex;
   }
@@ -280,5 +281,18 @@
   }
   a:hover {
     color: red;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .divMenu {
+    justify-content: inherit;
+  }
+  .form {
+    width: 40%;
+    margin: 30px;
+  }
+  .table {
+    width: 45%;
+    margin: 0px 30px;
   }
 }
