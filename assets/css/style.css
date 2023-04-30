@@ -98,12 +98,13 @@
     align-items: center;
   }
   .form-conteiner {
-    font-size: 18px;
+    font-size: 15px;
     width: 100%;
     margin: 20px;
   }
-  .select {
-    height: 23px;
+  #select {
+    height: 30px;
+    padding: 5px;
     margin: 0px 0.4px;
   }
   .form-comt-caixa,
@@ -116,15 +117,19 @@
   }
   .input-mercadoria,
   .input-input-valor {
-    height: 23px;
+    height: 30px;
+    padding: 5px;
   }
   .button {
     width: 100%;
-    height: 23px;
+    height: 30px;
   }
   .botao {
     width: 100%;
-    height: 25px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
     border-radius: 4px;
@@ -139,7 +144,7 @@
   .table {
     width: 90%;
     display: flex;
-    font-size: 16px;
+    font-size: 13px;
     flex-direction: column;
     margin: 0px 30px 30px 30px;
   }
